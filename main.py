@@ -10,7 +10,7 @@ def method_hw02Task01_v_00():
     # не работает дробное число просто выводит его в консоль.
 #method_hw02Task01_v_00()
 def method_hw02Task01_v_01():
-    numBeforeClear = input()
+    numBeforeClear = input("Введите число: ")
     numClearStepOne = numBeforeClear.replace('.', '')
     numAfterClear = numClearStepOne.replace(',', '')
     # print(numAfterClear)
@@ -18,6 +18,16 @@ def method_hw02Task01_v_01():
     for step in numAfterClear:
         summ += int(step)
     print(summ)
-#method_hw02Task01_v_01()
-print("введите число N")
-num = int(input())
+def method_hw02Task02_v_00():
+   # print("введите число N")
+    num = int(input("введите число N: "))
+    # print(num)
+    st = 1
+    for step in range(num):
+        st *= step + 1
+        print(st)
+
+
+method_hw02Task01_v_01()
+
+method_hw02Task02_v_00()
